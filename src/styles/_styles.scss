@@ -1,0 +1,247 @@
+@import './variables';
+
+
+html {
+  overflow-x: hidden;
+}
+
+
+a:hover {
+  cursor: pointer;
+}
+
+.carousel-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 80%;
+
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px;
+
+}
+
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 5%;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-link {
+  color: $black !important;
+  font-size: 0.875rem !important;
+  line-height: 1.313rem !important;
+  font-weight: 500 !important;
+
+}
+
+/* ----------------------------- NAVBAR ----------------------------- */
+
+.navbar {
+  &-btn {
+    min-width: 150px;
+    height: 30px;
+    background: $mint;
+    border-radius: 10px;
+
+    &-in {
+      width: auto;
+      height: 30px;
+    }
+  }
+
+  &-logo {
+    width: 90%;
+
+    @media(max-width:767px) {
+      width: 70%!important;
+    }
+  }
+}
+
+
+/* ----------------------------- CAROUSEL ----------------------------- */
+
+.carousel {
+  & h1 {
+    @media (max-width:767px) {
+      font-size: 1.5rem !important;
+      line-height: 2.25rem !important;
+    }
+  }
+
+  & p {
+    @media (max-width:767px) {
+      font-size: 0.938rem !important;
+      line-height: 1.25rem !important;
+    }
+  }
+
+  &-btn {
+    width: 215px;
+    height: 40px;
+    background: $mint;
+    border-radius: 10px;
+    cursor: pointer;
+
+    @media (max-width:767px) {
+      width: 120px;
+      height: 30px;
+    }
+  }
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  @media(max-width:767px) {
+    width: 15px !important;
+    width: 15px !important;
+  }
+
+}
+
+.carousel-indicators {
+  & li {
+    @media(max-width:767px) {
+      width: 10px !important;
+      height: 10px !important;
+    }
+  }
+}
+
+/* ----------------------------- FEATURES ----------------------------- */
+
+.features {
+  &-item {
+    &-top {
+      min-height: 220px;
+      @media (max-width:991px) {
+        min-height: 120px;
+
+      }
+      &-icon {
+        min-height: 130px;
+        & img{
+          width: 35%;
+        }
+      }
+    }
+  }
+}
+
+/* ----------------------------- why choose ySign BIZ ----------------------------- */
+
+.whychoose {
+  background-color: $blue;
+  min-height: 300px;
+  margin-top: 8rem !important;
+
+
+  &-btn {
+    width: 215px;
+    height: 40px;
+    background: $mint;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  &-lap {
+    width: 130%;
+    margin-top: -15%;
+
+    @media (max-width:767px) {
+      width: 50%;
+      margin-top: -10%;
+
+    }
+
+    @media (max-width:551px) {
+      width: 80%;
+      margin-top: -20%;
+
+    }
+  }
+
+  &-right {
+    text-align: right;
+
+    @media (max-width:767px) {
+      text-align: center;
+    }
+
+    & div {
+      display: flex;
+      justify-content: flex-end;
+
+      @media (max-width:767px) {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+/* ----------------------------- CEO ----------------------------- */
+
+.ceo {
+  background: url('../img/CEOBackground.png') center center/cover no-repeat;
+  height: 80vh;
+  width: 100%;
+
+  @media (max-width:767px) {
+    height: auto;
+    padding: 5rem 0rem !important;
+
+  }
+
+  &-quote {
+    text-align: right;
+
+    @media (max-width:767px) {
+      text-align: center;
+    }
+
+    & h2 {
+      font-size: 2.25rem !important;
+      line-height: 3.375rem !important;
+
+      @media (max-width:767px) {
+        font-size: 1.5rem !important;
+        line-height: 2.25rem !important;
+      }
+    }
+
+    & h3 {
+      font-size: 1.5rem !important;
+      line-height: 2.25rem !important;
+
+      @media (max-width:767px) {
+        font-size: 1.375rem !important;
+        line-height: 1.813rem !important;
+      }
+
+    }
+  }
+
+}
+
+/* ----------------------------- FOOTER ----------------------------- */
+
+.footer {
+  background-color: $blue;
+}
